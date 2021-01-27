@@ -16,19 +16,40 @@
             <button id="juego-relax">Modo relax</button>
         </div>
     </div>
+    
     <header class="cabecera">
         <div class="contadores">
-            <h4>Movimientos</h4>
-            <h4>Tiempo</h4>
-        </div>
-        <div>
-            <h4>Nivel</h4>
-        </div>       
+            <div class="contador-item">
+                <h4 class="cabecera-titulo">Movimientos</h4>
+                <div class="cabecera-num">
+                    <span id="mov">00</span>/<span id="mov-total">20</span>
+                </div>
+            </div>
+            <div id="cronometro" class="contador-item">
+                <h4 class="cabecera-titulo">Tiempo</h4>
+                <div class="cabecera-num">
+                    <span id="minutos">00</span>:<span id="segundos">00</span>
+                </div>
+            </div>
+            <div class="nivel">
+                <h4 class="cabecera-titulo">Nivel</h4>
+                <div class="cabecera-num"><span id="nivel">01</span></div>
+            </div>
+            <button id="control-nivel" class="control-nivel">...</button>
+        </div>  
     </header>
-    <main>
 
+    <main>
+        <div id="mesa" class="mesa"></div>
+        
     </main>
-    
+    <div class="selecciona-nivel">
+        <button id="cierra-niveles" class="cierra-niveles">&times;</button>
+        <ul></ul>
+    </div>
+
+    <script src="js/variables-globales.js"></script>
+    <script src="js/menu-niveles.js"></script>
     <script src="js/iniciar.js"></script>
     <script src="js/comienza-juego.js"></script>
 </body>
